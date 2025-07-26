@@ -1,11 +1,14 @@
 {
-  "name": "gphotoink",
+  "name": "gphototakeout-ink",
   "version": "1.0.0",
-  "description": "gphotoink",
+  "description": "gphototakeout-ink",
   "main": "src/app.ts",
   "scripts": {
     "build": "npx tsc",
-    "start": "pm2 start dist/app.js --name gphotoink",
+    "start": "pm2 start dist/app.js --name gphototakeout-ink",
+    "stop": "pm2 stop dist/app.js --name gphototakeout-ink",
+    "enable": "pm2 save; pm2 startup",
+    "logs": "pm2 logs gphototakeout-ink",
     "dev": "nodemon src/app.ts"
   },
   "keywords": [

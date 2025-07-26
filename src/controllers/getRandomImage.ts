@@ -1,10 +1,11 @@
 import fs from 'fs';
 import path from 'path';
 import exifr from 'exifr';
+import config from '../config';
 
-const imagesRootFolder = '/Volumes/mnt/usb/gphotos/Takeout/Google Photos';
-const periodStart = '2001:01';
-const periodEnd = '2011:10';
+const imagesRootFolder = config.imagesRootFolder;
+const periodStart = config.periodStart;
+const periodEnd = config.periodEnd;
 
 function isInPeriod(dateStr: string, start: string, end: string) {
   try {

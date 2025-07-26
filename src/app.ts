@@ -1,10 +1,10 @@
 import express, { Request, Response } from 'express';
 import { setRoutes } from './routes';
 import { ErrorRequestHandler, NextFunction } from 'express';
-import path from 'path';
+import config from './config';
 
 const app = express();
-const port = process.env.PORT || 2020;
+const port = config.port;
 
 app.use(express.json());
 

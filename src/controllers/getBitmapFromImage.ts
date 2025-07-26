@@ -5,11 +5,11 @@ import fs from 'fs';
 import { Jimp } from 'jimp';
 import * as JimpContainer from 'jimp';
 import exifr from 'exifr';
-
+import config from '../config';
 const customPaletteRedBlackWhite = [255, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 0];
 
-const targetWidth = 800;
-const targetHeight = 480;
+const targetWidth = config.targetWidth;
+const targetHeight = config.targetHeight;
 
 function scaleImageToFitAndAddBorders(
   srcData: Uint8Array,
