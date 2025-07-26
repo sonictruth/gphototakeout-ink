@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import getRandomImage from './getRandomImage';
-import getBitmapFromJpegImage from './getBitmapFromImage';
+import getRandomImage from '../utils/getRandomImage';
+import getBitmapFromJpegImage from '../utils/getBitmapFromImage';
 
 class IndexController {
   async getIndex(req: Request, res: Response, next: any) {

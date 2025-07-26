@@ -1,6 +1,6 @@
 import jpeg from 'jpeg-js';
 import { buildPaletteSync, applyPaletteSync, utils } from 'image-q';
-import { BmpEncoder } from '../utils/bmpEncoder';
+import { BmpEncoder } from './bmpEncoder';
 import fs from 'fs';
 import { Jimp } from 'jimp';
 import * as JimpContainer from 'jimp';
