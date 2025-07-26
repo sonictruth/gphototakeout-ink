@@ -1,0 +1,1 @@
+This project picks and shows a random photo from a Google Photos Takeout dump in an 8-bit BMP black, red, and white format that can be displayed on an e-Ink display.
